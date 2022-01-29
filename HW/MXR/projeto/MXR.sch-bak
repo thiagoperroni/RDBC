@@ -1,0 +1,515 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Placa Mixer"
+Date "2019-01-24"
+Rev "00"
+Comp "PSI Poli-USP - Matteus"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6250 3800 6250 4600
+Wire Wire Line
+	5950 3600 5950 4600
+$Comp
+L MXR-rescue:Conn_Coaxial-Connector-PA-rescue-Coupler-rescue-CPL-rescue J1
+U 1 1 5E4AAD3C
+P 5700 4800
+F 0 "J1" H 5500 4700 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5700 4950 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 5700 4800 50  0001 C CNN
+F 3 " ~" H 5700 4800 50  0001 C CNN
+	1    5700 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L MXR-rescue:Conn_Coaxial-Connector-PA-rescue-Coupler-rescue-CPL-rescue J4
+U 1 1 5E4A92B6
+P 6250 4800
+F 0 "J4" H 6050 4700 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6250 4950 50  0000 C CNN
+F 2 "Connector_Coaxial:CoaxialSwitch_Hirose_MS-156C3_Horizontal" H 6250 4800 50  0001 C CNN
+F 3 " ~" H 6250 4800 50  0001 C CNN
+	1    6250 4800
+	0    1    1    0   
+$EndComp
+Text Notes 4150 2050 0    207  ~ 0
+Mixer
+Wire Wire Line
+	7950 3100 7750 3100
+Connection ~ 7950 3100
+Wire Wire Line
+	7950 2750 7950 3100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5ECDB8C2
+P 7950 2750
+F 0 "#FLG0101" H 7950 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 7950 2923 50  0000 C CNN
+F 2 "" H 7950 2750 50  0001 C CNN
+F 3 "~" H 7950 2750 50  0001 C CNN
+	1    7950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3100 7950 3100
+NoConn ~ 7750 3000
+$Comp
+L MAX2042AETP_:MAX2042AETP+ U1
+U 1 1 5E44737C
+P 7050 3600
+F 0 "U1" H 7050 4470 50  0000 C CNN
+F 1 "MAX2042AETP+" H 7050 4379 50  0000 C CNN
+F 2 "Package_DFN_QFN:TQFN-20-1EP_5x5mm_P0.65mm_EP3.1x3.1mm" H 7050 3600 50  0001 L BNN
+F 3 "Maxim Integrated" H 7050 3600 50  0001 L BNN
+F 4 "None" H 7050 3600 50  0001 L BNN "Campo4"
+F 5 "Unavailable" H 7050 3600 50  0001 L BNN "Campo5"
+F 6 "MAX2042AETP+" H 7050 3600 50  0001 L BNN "Campo6"
+F 7 "TQFN-20 Maxim" H 7050 3600 50  0001 L BNN "Campo7"
+F 8 "MAX2042 Series 1.6 to 3.9 GHz Up/Down Conversion Mixer - TQFN-20EP" H 7050 3600 50  0001 L BNN "Campo8"
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E4A1AA9
+P 5550 3400
+F 0 "C1" H 5665 3446 50  0000 L CNN
+F 1 "8.2pF" H 5665 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5588 3250 50  0001 C CNN
+F 3 "~" H 5550 3400 50  0001 C CNN
+	1    5550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E451A22
+P 8100 3450
+F 0 "R1" H 8170 3496 50  0000 L CNN
+F 1 "698 ohms" H 8170 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8030 3450 50  0001 C CNN
+F 3 "~" H 8100 3450 50  0001 C CNN
+	1    8100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3300 8100 3300
+Wire Wire Line
+	8100 3650 8100 3600
+$Comp
+L Device:C C2
+U 1 1 5E75BE00
+P 1400 2350
+F 0 "C2" H 1515 2396 50  0000 L CNN
+F 1 "0.01uF" H 1515 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1438 2200 50  0001 C CNN
+F 3 "~" H 1400 2350 50  0001 C CNN
+	1    1400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5E75B7B2
+P 2900 2350
+F 0 "C8" H 3015 2396 50  0000 L CNN
+F 1 "0.01uF" H 3015 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2938 2200 50  0001 C CNN
+F 3 "~" H 2900 2350 50  0001 C CNN
+	1    2900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5E75ACEC
+P 2400 2350
+F 0 "C6" H 2515 2396 50  0000 L CNN
+F 1 "0.01uF" H 2515 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2438 2200 50  0001 C CNN
+F 3 "~" H 2400 2350 50  0001 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5E75A69E
+P 1900 2350
+F 0 "C11" H 2015 2396 50  0000 L CNN
+F 1 "0.01uF" H 2015 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1938 2200 50  0001 C CNN
+F 3 "~" H 1900 2350 50  0001 C CNN
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5000 5500 4800
+Wire Wire Line
+	6050 4800 6050 5000
+$Comp
+L power:GND #PWR05
+U 1 1 5E4AEEC2
+P 6050 5000
+F 0 "#PWR05" H 6050 4750 50  0001 C CNN
+F 1 "GND" H 6055 4827 50  0000 C CNN
+F 2 "" H 6050 5000 50  0001 C CNN
+F 3 "" H 6050 5000 50  0001 C CNN
+	1    6050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E4AE752
+P 5500 5000
+F 0 "#PWR04" H 5500 4750 50  0001 C CNN
+F 1 "GND" H 5505 4827 50  0000 C CNN
+F 2 "" H 5500 5000 50  0001 C CNN
+F 3 "" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4600 5700 4600
+Wire Wire Line
+	5200 4050 5200 4300
+Wire Wire Line
+	5750 4050 5200 4050
+$Comp
+L power:GND #PWR03
+U 1 1 5E4A7E7E
+P 5200 4300
+F 0 "#PWR03" H 5200 4050 50  0001 C CNN
+F 1 "GND" H 5205 4127 50  0000 C CNN
+F 2 "" H 5200 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3400 6350 3400
+Connection ~ 5750 3400
+Wire Wire Line
+	5750 3550 5750 3400
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5E4A3E48
+P 5750 3800
+F 0 "L1" V 5704 3878 50  0000 L CNN
+F 1 "12nH" V 5795 3878 50  0000 L CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5750 3800 50  0001 C CNN
+F 3 "~" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3400 5750 3400
+Wire Wire Line
+	5050 3400 5400 3400
+Wire Wire Line
+	4500 3000 4500 3550
+Wire Wire Line
+	4850 3000 4500 3000
+Wire Wire Line
+	4850 3200 4850 3000
+Wire Wire Line
+	6350 3600 5950 3600
+Wire Wire Line
+	6350 3800 6250 3800
+Wire Wire Line
+	5200 2300 5200 2350
+Wire Wire Line
+	5750 2300 5200 2300
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR02
+U 1 1 5E46F474
+P 5200 2350
+F 0 "#PWR02" H 5200 2100 50  0001 C CNN
+F 1 "GND" H 5205 2177 50  0000 C CNN
+F 2 "" H 5200 2350 50  0001 C CNN
+F 3 "" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2500 6100 2750
+Wire Wire Line
+	5950 2500 6100 2500
+$Comp
+L MXR-rescue:Conn_Coaxial-Connector-PA-rescue-Coupler-rescue-CPL-rescue J2
+U 1 1 5E46E22D
+P 5750 2500
+F 0 "J2" H 5550 2400 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5750 2650 50  0000 C CNN
+F 2 "fp:SMA_Amphenol_901-9215_EdgeMount" H 5750 2500 50  0001 C CNN
+F 3 " ~" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 3300 6100 3050
+Wire Wire Line
+	6350 3300 6100 3300
+$Comp
+L Device:C C10
+U 1 1 5E46D5D6
+P 6100 2900
+F 0 "C10" H 6215 2946 50  0000 L CNN
+F 1 "2pF" H 6215 2855 50  0000 L CNN
+F 2 "SamacSys_Parts:CAPC1005X55N" H 6138 2750 50  0001 C CNN
+F 3 "~" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2650 1900 2500
+Wire Wire Line
+	8250 3100 8250 2750
+$Comp
+L power:+5V #PWR07
+U 1 1 5E46947A
+P 8250 2750
+F 0 "#PWR07" H 8250 2600 50  0001 C CNN
+F 1 "+5V" H 8265 2923 50  0000 C CNN
+F 2 "" H 8250 2750 50  0001 C CNN
+F 3 "" H 8250 2750 50  0001 C CNN
+	1    8250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR09
+U 1 1 5E46547F
+P 1900 2650
+F 0 "#PWR09" H 1900 2400 50  0001 C CNN
+F 1 "GND" H 1905 2477 50  0000 C CNN
+F 2 "" H 1900 2650 50  0001 C CNN
+F 3 "" H 1900 2650 50  0001 C CNN
+	1    1900 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR01
+U 1 1 5E45E8BF
+P 4500 3550
+F 0 "#PWR01" H 4500 3300 50  0001 C CNN
+F 1 "GND" H 4505 3377 50  0000 C CNN
+F 2 "" H 4500 3550 50  0001 C CNN
+F 3 "" H 4500 3550 50  0001 C CNN
+	1    4500 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR06
+U 1 1 5E45AC21
+P 8100 3650
+F 0 "#PWR06" H 8100 3400 50  0001 C CNN
+F 1 "GND" H 8105 3477 50  0000 C CNN
+F 2 "" H 8100 3650 50  0001 C CNN
+F 3 "" H 8100 3650 50  0001 C CNN
+	1    8100 3650
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8050 4100
+Wire Wire Line
+	8050 4200 8050 4100
+Wire Wire Line
+	7750 4200 8050 4200
+Wire Wire Line
+	8050 4000 8350 4000
+Connection ~ 8050 4000
+Wire Wire Line
+	8050 4100 8050 4000
+Wire Wire Line
+	7750 4100 8050 4100
+Wire Wire Line
+	7750 4000 8050 4000
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR08
+U 1 1 5E45000A
+P 8350 4000
+F 0 "#PWR08" H 8350 3750 50  0001 C CNN
+F 1 "GND" H 8355 3827 50  0000 C CNN
+F 2 "" H 8350 4000 50  0001 C CNN
+F 3 "" H 8350 4000 50  0001 C CNN
+	1    8350 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:Conn_Coaxial-Connector-PA-rescue-Coupler-rescue-CPL-rescue J3
+U 1 1 5C49BA5D
+P 4850 3400
+F 0 "J3" H 4650 3300 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4850 3550 50  0000 C CNN
+F 2 "fp:SMA_Amphenol_901-9215_EdgeMount" H 4850 3400 50  0001 C CNN
+F 3 " ~" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60229C1B
+P 2900 2100
+F 0 "#PWR0101" H 2900 1950 50  0001 C CNN
+F 1 "+5V" H 2915 2273 50  0000 C CNN
+F 2 "" H 2900 2100 50  0001 C CNN
+F 3 "" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 6022A10C
+P 2400 2100
+F 0 "#PWR0102" H 2400 1950 50  0001 C CNN
+F 1 "+5V" H 2415 2273 50  0000 C CNN
+F 2 "" H 2400 2100 50  0001 C CNN
+F 3 "" H 2400 2100 50  0001 C CNN
+	1    2400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 6022A369
+P 1900 2100
+F 0 "#PWR0103" H 1900 1950 50  0001 C CNN
+F 1 "+5V" H 1915 2273 50  0000 C CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 6022A549
+P 1400 2100
+F 0 "#PWR0104" H 1400 1950 50  0001 C CNN
+F 1 "+5V" H 1415 2273 50  0000 C CNN
+F 2 "" H 1400 2100 50  0001 C CNN
+F 3 "" H 1400 2100 50  0001 C CNN
+	1    1400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR0105
+U 1 1 6022A735
+P 1400 2650
+F 0 "#PWR0105" H 1400 2400 50  0001 C CNN
+F 1 "GND" H 1405 2477 50  0000 C CNN
+F 2 "" H 1400 2650 50  0001 C CNN
+F 3 "" H 1400 2650 50  0001 C CNN
+	1    1400 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR0106
+U 1 1 6022A968
+P 2400 2650
+F 0 "#PWR0106" H 2400 2400 50  0001 C CNN
+F 1 "GND" H 2405 2477 50  0000 C CNN
+F 2 "" H 2400 2650 50  0001 C CNN
+F 3 "" H 2400 2650 50  0001 C CNN
+	1    2400 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR0107
+U 1 1 6022ABFE
+P 2900 2650
+F 0 "#PWR0107" H 2900 2400 50  0001 C CNN
+F 1 "GND" H 2905 2477 50  0000 C CNN
+F 2 "" H 2900 2650 50  0001 C CNN
+F 3 "" H 2900 2650 50  0001 C CNN
+	1    2900 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2200 2900 2100
+Wire Wire Line
+	2900 2650 2900 2500
+Wire Wire Line
+	2400 2650 2400 2500
+Wire Wire Line
+	2400 2200 2400 2100
+Wire Wire Line
+	1400 2650 1400 2500
+Wire Wire Line
+	1400 2200 1400 2100
+Wire Wire Line
+	1900 2200 1900 2100
+Wire Notes Line
+	1100 1650 3350 1650
+Text Notes 1150 1800 0    89   ~ 0
+Decoupling
+Wire Notes Line
+	3350 3000 1100 3000
+Wire Notes Line
+	3350 1650 3350 3000
+Wire Notes Line
+	1100 1650 1100 3000
+Wire Notes Line
+	8650 1650 8650 5350
+Wire Notes Line
+	3900 5350 3900 1650
+Wire Notes Line
+	3900 1650 8650 1650
+Wire Notes Line
+	3900 5350 8650 5350
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 6027AE9A
+P 1650 3950
+F 0 "J5" H 1568 3625 50  0000 C CNN
+F 1 "Conn_01x02" H 1568 3716 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 1650 3950 50  0001 C CNN
+F 3 "~" H 1650 3950 50  0001 C CNN
+	1    1650 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L MXR-rescue:GND-power-PA-rescue-Coupler-rescue-CPL-rescue #PWR0108
+U 1 1 6027B7E0
+P 2050 4100
+F 0 "#PWR0108" H 2050 3850 50  0001 C CNN
+F 1 "GND" H 2055 3927 50  0000 C CNN
+F 2 "" H 2050 4100 50  0001 C CNN
+F 3 "" H 2050 4100 50  0001 C CNN
+	1    2050 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 6027C150
+P 2050 3750
+F 0 "#PWR0109" H 2050 3600 50  0001 C CNN
+F 1 "+5V" H 2065 3923 50  0000 C CNN
+F 2 "" H 2050 3750 50  0001 C CNN
+F 3 "" H 2050 3750 50  0001 C CNN
+	1    2050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3850 2050 3850
+Wire Wire Line
+	2050 3850 2050 3750
+Wire Wire Line
+	1850 3950 2050 3950
+Wire Wire Line
+	2050 3950 2050 4100
+Text Notes 1150 3350 0    89   ~ 0
+Power
+Wire Notes Line
+	1100 3150 3350 3150
+Wire Notes Line
+	3350 3150 3350 4400
+Wire Notes Line
+	3350 4400 1100 4400
+Wire Notes Line
+	1100 4400 1100 3150
+Text Label 5950 4400 0    50   ~ 0
+IF-
+Text Label 6250 4400 0    50   ~ 0
+IF+
+$EndSCHEMATC
