@@ -1,0 +1,380 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Placa Voltage-controlled oscillator"
+Date "2019-01-24"
+Rev "00"
+Comp "PSI Poli-USP"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L vco-rescue:Conn_Coaxial-Connector J3
+U 1 1 5C49BA5D
+P 7350 3400
+F 0 "J3" H 7150 3300 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7350 3550 50  0000 C CNN
+F 2 "footprints:SMA_Amphenol_901-9215_EdgeMount" H 7350 3400 50  0001 C CNN
+F 3 " ~" H 7350 3400 50  0001 C CNN
+	1    7350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:CP1-Device C1
+U 1 1 5C4F9CBA
+P 5350 3850
+F 0 "C1" H 5465 3896 50  0000 L CNN
+F 1 "0.1uF" H 5465 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 3850 50  0001 C CNN
+F 3 "~" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:R-Device R1
+U 1 1 5C4F9F46
+P 5350 2950
+F 0 "R1" H 5420 2996 50  0000 L CNN
+F 1 "10k" H 5420 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5280 2950 50  0001 C CNN
+F 3 "~" H 5350 2950 50  0001 C CNN
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3300 5350 3300
+Wire Wire Line
+	5350 3300 5350 3100
+Wire Wire Line
+	5500 3600 5350 3600
+Wire Wire Line
+	5350 3600 5350 3700
+$Comp
+L vco-rescue:GND-power #PWR05
+U 1 1 5C4FB4FF
+P 5350 4200
+F 0 "#PWR05" H 5350 3950 50  0001 C CNN
+F 1 "GND" H 5355 4027 50  0000 C CNN
+F 2 "" H 5350 4200 50  0001 C CNN
+F 3 "" H 5350 4200 50  0001 C CNN
+	1    5350 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:+5V-power #PWR01
+U 1 1 5C4FCF88
+P 3750 2600
+F 0 "#PWR01" H 3750 2450 50  0001 C CNN
+F 1 "+5V" H 3765 2773 50  0000 C CNN
+F 2 "" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:GND-power #PWR02
+U 1 1 5C4FCFBF
+P 3750 3200
+F 0 "#PWR02" H 3750 2950 50  0001 C CNN
+F 1 "GND" H 3755 3027 50  0000 C CNN
+F 2 "" H 3750 3200 50  0001 C CNN
+F 3 "" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:+5V-power #PWR04
+U 1 1 5C4FE982
+P 5350 2700
+F 0 "#PWR04" H 5350 2550 50  0001 C CNN
+F 1 "+5V" H 5365 2873 50  0000 C CNN
+F 2 "" H 5350 2700 50  0001 C CNN
+F 3 "" H 5350 2700 50  0001 C CNN
+	1    5350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2800 5350 2700
+Wire Wire Line
+	6700 3600 6800 3600
+Wire Wire Line
+	6800 3600 6800 3700
+Wire Wire Line
+	6700 3700 6800 3700
+Text Label 5350 3300 0    50   ~ 0
+SHDN
+Text Label 5350 3600 0    50   ~ 0
+BYP
+Text Label 6750 3400 0    50   ~ 0
+OUT
+$Comp
+L vco-rescue:Conn_01x02-Connector_Generic J1
+U 1 1 5C4FA506
+P 2950 2850
+F 0 "J1" H 3050 3050 50  0000 C CNN
+F 1 "Conn_01x02" H 2870 2976 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 2950 2850 50  0001 C CNN
+F 3 "~" H 2950 2850 50  0001 C CNN
+	1    2950 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3400 7150 3400
+$Comp
+L vco-rescue:+5V-power #PWR0102
+U 1 1 5D56D43D
+P 8050 2700
+F 0 "#PWR0102" H 8050 2550 50  0001 C CNN
+F 1 "+5V" H 8065 2873 50  0000 C CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2950 3750 3200
+Wire Wire Line
+	6700 3200 7700 3200
+$Comp
+L vco-rescue:GND-power #PWR0103
+U 1 1 5D8C7AF0
+P 4650 4200
+F 0 "#PWR0103" H 4650 3950 50  0001 C CNN
+F 1 "GND" H 4655 4027 50  0000 C CNN
+F 2 "" H 4650 4200 50  0001 C CNN
+F 3 "" H 4650 4200 50  0001 C CNN
+	1    4650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:SW_Push-Switch SW1
+U 1 1 5FF36AD2
+P 4650 3850
+F 0 "SW1" V 4696 3802 50  0000 R CNN
+F 1 "SW_Push" V 4605 3802 50  0000 R CNN
+F 2 "radar:switchRadar" H 4650 4050 50  0001 C CNN
+F 3 "~" H 4650 4050 50  0001 C CNN
+	1    4650 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 4050 4650 4200
+Wire Wire Line
+	4650 3650 4650 3300
+Wire Wire Line
+	4650 3300 5350 3300
+Connection ~ 5350 3300
+Wire Wire Line
+	3750 2600 3750 2850
+Text Notes 2800 2350 0    50   ~ 0
+Power\n
+$Comp
+L vco-rescue:Conn_01x02-Connector_Generic J2
+U 1 1 5FF40A67
+P 2950 4300
+F 0 "J2" H 2868 3975 50  0000 C CNN
+F 1 "Conn_01x02" H 2868 4066 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 2950 4300 50  0001 C CNN
+F 3 "~" H 2950 4300 50  0001 C CNN
+	1    2950 4300
+	-1   0    0    1   
+$EndComp
+Text Label 3350 4200 0    50   ~ 0
+Tune
+Text Label 4650 3200 0    50   ~ 0
+Tune
+Wire Wire Line
+	3350 4300 3350 4450
+Wire Wire Line
+	3150 4300 3350 4300
+$Comp
+L vco-rescue:GND-power #PWR0104
+U 1 1 5FF508EE
+P 3350 4450
+F 0 "#PWR0104" H 3350 4200 50  0001 C CNN
+F 1 "GND" H 3355 4277 50  0000 C CNN
+F 2 "" H 3350 4450 50  0001 C CNN
+F 3 "" H 3350 4450 50  0001 C CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4200 3350 4200
+Wire Notes Line
+	4100 3500 2700 3500
+Wire Notes Line
+	4100 3650 4100 4700
+Wire Notes Line
+	2700 4700 2700 3650
+Wire Notes Line
+	2700 3650 4100 3650
+Wire Notes Line
+	2700 4700 4100 4700
+Text Notes 2850 3800 0    50   ~ 0
+Tune\n
+Wire Notes Line
+	8700 2100 4250 2100
+Wire Notes Line
+	4250 2100 4250 4700
+Wire Wire Line
+	5350 4000 5350 4200
+Text Notes 4500 2300 0    50   ~ 0
+VCO
+Wire Notes Line
+	4100 2100 2700 2100
+Wire Notes Line
+	4100 2100 4100 3500
+Wire Notes Line
+	2700 2100 2700 3500
+Wire Wire Line
+	4650 3200 5500 3200
+Wire Wire Line
+	3500 2950 3750 2950
+Wire Wire Line
+	3150 2950 3500 2950
+Connection ~ 3500 2950
+$Comp
+L vco-rescue:PWR_FLAG-power #FLG0102
+U 1 1 5D57792F
+P 3500 2950
+F 0 "#FLG0102" H 3500 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 3123 50  0000 C CNN
+F 2 "" H 3500 2950 50  0001 C CNN
+F 3 "~" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2850 3750 2850
+Wire Wire Line
+	3150 2850 3500 2850
+Connection ~ 3500 2850
+$Comp
+L vco-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5D576041
+P 3500 2850
+F 0 "#FLG0101" H 3500 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 3023 50  0000 C CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "~" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3500 7700 3200
+Connection ~ 6800 3700
+Wire Wire Line
+	7700 4200 7700 3800
+$Comp
+L vco-rescue:GND-power #PWR0105
+U 1 1 5FFC7E70
+P 7700 4200
+F 0 "#PWR0105" H 7700 3950 50  0001 C CNN
+F 1 "GND" H 7705 4027 50  0000 C CNN
+F 2 "" H 7700 4200 50  0001 C CNN
+F 3 "" H 7700 4200 50  0001 C CNN
+	1    7700 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:C-Device C2
+U 1 1 5FFC6E2B
+P 7700 3650
+F 0 "C2" H 7815 3696 50  0000 L CNN
+F 1 "220 pF" H 7815 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7738 3500 50  0001 C CNN
+F 3 "~" H 7700 3650 50  0001 C CNN
+	1    7700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3800 8050 4200
+Wire Wire Line
+	7350 3600 7350 4200
+Wire Wire Line
+	6800 3700 6800 4200
+Wire Notes Line
+	8700 2100 8700 4700
+Wire Notes Line
+	4250 4700 8700 4700
+$Comp
+L vco-rescue:MAX2750EUA+-MAX2750EUA_ U1
+U 1 1 5C4F997F
+P 6100 3400
+F 0 "U1" H 6100 3967 50  0000 C CNN
+F 1 "MAX2750EUA+" H 6100 3876 50  0000 C CNN
+F 2 "SamacSys_Parts:SOP65P490X110-8N" H 6100 3400 50  0001 L BNN
+F 3 "MSOP-8 Maxim Integrated" H 6100 3400 50  0001 L BNN
+F 4 "" H 6100 3400 50  0000 L BNN "Field4"
+F 5 "Unavailable" H 6100 3400 50  0001 L BNN "Field5"
+F 6 "Controlled Oscillator 2.4GHz to 2.5GHz VCXO 8-Pin uMAX" H 6100 3400 50  0001 L BNN "Field6"
+F 7 "MAX2750EUA+" H 6100 3400 50  0001 L BNN "Field7"
+F 8 "Maxim Integrated" H 6100 3400 50  0001 L BNN "Field8"
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:GND-power #PWR06
+U 1 1 5C4FFE01
+P 6800 4200
+F 0 "#PWR06" H 6800 3950 50  0001 C CNN
+F 1 "GND" H 6805 4027 50  0000 C CNN
+F 2 "" H 6800 4200 50  0001 C CNN
+F 3 "" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:GND-power #PWR08
+U 1 1 5C4FB683
+P 8050 4200
+F 0 "#PWR08" H 8050 3950 50  0001 C CNN
+F 1 "GND" H 8055 4027 50  0000 C CNN
+F 2 "" H 8050 4200 50  0001 C CNN
+F 3 "" H 8050 4200 50  0001 C CNN
+	1    8050 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:C-Device C3
+U 1 1 5C4FA0B6
+P 8050 3650
+F 0 "C3" H 8165 3696 50  0000 L CNN
+F 1 "220pF" H 8165 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 3500 50  0001 C CNN
+F 3 "~" H 8050 3650 50  0001 C CNN
+	1    8050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L vco-rescue:GND-power #PWR0101
+U 1 1 5C49FB0B
+P 7350 4200
+F 0 "#PWR0101" H 7350 3950 50  0001 C CNN
+F 1 "GND" H 7355 4027 50  0000 C CNN
+F 2 "" H 7350 4200 50  0001 C CNN
+F 3 "" H 7350 4200 50  0001 C CNN
+	1    7350 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2700 8050 3100
+Connection ~ 8050 3100
+Wire Wire Line
+	7850 3100 8050 3100
+Wire Wire Line
+	8050 3200 8050 3500
+Wire Wire Line
+	8050 3100 8050 3200
+Connection ~ 8050 3200
+Connection ~ 7700 3200
+Wire Wire Line
+	7700 3200 8050 3200
+Wire Wire Line
+	6700 3100 7850 3100
+$EndSCHEMATC

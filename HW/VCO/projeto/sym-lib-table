@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name vco-rescue)(type Legacy)(uri ${KIPRJMOD}/vco-rescue.lib)(options "")(descr ""))
+)
