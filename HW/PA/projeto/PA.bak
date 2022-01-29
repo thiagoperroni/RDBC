@@ -1,0 +1,312 @@
+EESchema Schematic File Version 4
+LIBS:PA-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Placa VOID"
+Date "2019-01-24"
+Rev "00"
+Comp "PSI Poli-USP"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5C49FB0B
+P 8400 4800
+F 0 "#PWR0101" H 8400 4550 50  0001 C CNN
+F 1 "GND" H 8405 4627 50  0000 C CNN
+F 2 "" H 8400 4800 50  0001 C CNN
+F 3 "" H 8400 4800 50  0001 C CNN
+	1    8400 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4350 8400 4800
+$Comp
+L Device:C C3
+U 1 1 5C4FA0B6
+P 8750 5000
+F 0 "C3" H 8865 5046 50  0000 L CNN
+F 1 "220pF" H 8865 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8788 4850 50  0001 C CNN
+F 3 "~" H 8750 5000 50  0001 C CNN
+	1    8750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C4FB683
+P 8750 5400
+F 0 "#PWR08" H 8750 5150 50  0001 C CNN
+F 1 "GND" H 8755 5227 50  0000 C CNN
+F 2 "" H 8750 5400 50  0001 C CNN
+F 3 "" H 8750 5400 50  0001 C CNN
+	1    8750 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5C4FCF88
+P 5700 3750
+F 0 "#PWR01" H 5700 3600 50  0001 C CNN
+F 1 "+5V" H 5715 3923 50  0000 C CNN
+F 2 "" H 5700 3750 50  0001 C CNN
+F 3 "" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C4FCFBF
+P 5700 5100
+F 0 "#PWR02" H 5700 4850 50  0001 C CNN
+F 1 "GND" H 5705 4927 50  0000 C CNN
+F 2 "" H 5700 5100 50  0001 C CNN
+F 3 "" H 5700 5100 50  0001 C CNN
+	1    5700 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5400 8750 5150
+$Comp
+L power:GND #PWR06
+U 1 1 5C4FFE01
+P 6800 4900
+F 0 "#PWR06" H 6800 4650 50  0001 C CNN
+F 1 "GND" H 6805 4727 50  0000 C CNN
+F 2 "" H 6800 4900 50  0001 C CNN
+F 3 "" H 6800 4900 50  0001 C CNN
+	1    6800 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C4FA506
+P 4900 4250
+F 0 "J1" H 5000 4450 50  0000 C CNN
+F 1 "Conn_01x02" H 4820 4376 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 4900 4250 50  0001 C CNN
+F 3 "~" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5D56D43D
+P 8750 4050
+F 0 "#PWR0102" H 8750 3900 50  0001 C CNN
+F 1 "+5V" H 8765 4223 50  0000 C CNN
+F 2 "" H 8750 4050 50  0001 C CNN
+F 3 "" H 8750 4050 50  0001 C CNN
+	1    8750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4250 5450 4250
+Wire Wire Line
+	5700 4250 5700 3750
+Wire Wire Line
+	5100 4350 5450 4350
+Wire Wire Line
+	5700 4350 5700 5100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D576041
+P 5450 4250
+F 0 "#FLG0101" H 5450 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 4423 50  0000 C CNN
+F 2 "" H 5450 4250 50  0001 C CNN
+F 3 "~" H 5450 4250 50  0001 C CNN
+	1    5450 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 4250
+Wire Wire Line
+	5450 4250 5700 4250
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D57792F
+P 5450 4350
+F 0 "#FLG0102" H 5450 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 4523 50  0000 C CNN
+F 2 "" H 5450 4350 50  0001 C CNN
+F 3 "~" H 5450 4350 50  0001 C CNN
+	1    5450 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 4350
+Wire Wire Line
+	5450 4350 5700 4350
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5D8B185D
+P 6150 4550
+F 0 "J?" H 5950 4450 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6150 4700 50  0000 C CNN
+F 2 "footprints:SMA_Amphenol_901-9215_EdgeMount" H 6150 4550 50  0001 C CNN
+F 3 " ~" H 6150 4550 50  0001 C CNN
+	1    6150 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4450 6800 4900
+$Comp
+L SamacSys_Parts:SE2609L-R U?
+U 1 1 5D8B3991
+P 6850 4250
+F 0 "U?" H 7550 4515 50  0000 C CNN
+F 1 "SE2609L-R" H 7550 4424 50  0000 C CNN
+F 2 "SON50P200X200X90-9N" H 8100 4350 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SE2609L-R.pdf" H 8100 4250 50  0001 L CNN
+F 4 "RF Amplifier 2.4GHz 802.11bgn 3.3Volt -20C +85C" H 8100 4150 50  0001 L CNN "Description"
+F 5 "0.9" H 8100 4050 50  0001 L CNN "Height"
+F 6 "" H 8100 3950 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 8100 3850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Skyworks" H 8100 3750 50  0001 L CNN "Manufacturer_Name"
+F 9 "SE2609L-R" H 8100 3650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4550 6850 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5D8BC8F2
+P 6150 5100
+F 0 "#PWR?" H 6150 4850 50  0001 C CNN
+F 1 "GND" H 6155 4927 50  0000 C CNN
+F 2 "" H 6150 5100 50  0001 C CNN
+F 3 "" H 6150 5100 50  0001 C CNN
+	1    6150 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5100 6150 4750
+Wire Wire Line
+	8250 4350 8400 4350
+$Comp
+L Device:R R?
+U 1 1 5D8C07D3
+P 5950 4400
+F 0 "R?" H 6020 4446 50  0000 L CNN
+F 1 "R" H 6020 4355 50  0000 L CNN
+F 2 "" V 5880 4400 50  0001 C CNN
+F 3 "~" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8C118C
+P 5950 3950
+F 0 "R?" H 6020 3996 50  0000 L CNN
+F 1 "R" H 6020 3905 50  0000 L CNN
+F 2 "" V 5880 3950 50  0001 C CNN
+F 3 "~" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D8C3576
+P 5950 3500
+F 0 "#PWR?" H 5950 3350 50  0001 C CNN
+F 1 "+5V" H 5965 3673 50  0000 C CNN
+F 2 "" H 5950 3500 50  0001 C CNN
+F 3 "" H 5950 3500 50  0001 C CNN
+	1    5950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3800 5950 3500
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D8C4F6A
+P 6550 4350
+F 0 "J?" H 6650 4550 50  0000 C CNN
+F 1 "Conn_01x02" H 6470 4476 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 6550 4350 50  0001 C CNN
+F 3 "~" H 6550 4350 50  0001 C CNN
+	1    6550 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4350 6850 4350
+Wire Wire Line
+	6750 4450 6800 4450
+Wire Wire Line
+	5950 4100 5950 4250
+Wire Wire Line
+	6850 4250 5950 4250
+Connection ~ 5950 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5D8CEFFF
+P 5950 5100
+F 0 "#PWR?" H 5950 4850 50  0001 C CNN
+F 1 "GND" H 5955 4927 50  0000 C CNN
+F 2 "" H 5950 5100 50  0001 C CNN
+F 3 "" H 5950 5100 50  0001 C CNN
+	1    5950 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4550 5950 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5D8D0486
+P 7550 5500
+F 0 "#PWR?" H 7550 5250 50  0001 C CNN
+F 1 "GND" H 7555 5327 50  0000 C CNN
+F 2 "" H 7550 5500 50  0001 C CNN
+F 3 "" H 7550 5500 50  0001 C CNN
+	1    7550 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5500 7550 5150
+Connection ~ 6800 4450
+Wire Wire Line
+	6800 4450 6850 4450
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5C49BA5D
+P 9300 4250
+F 0 "J3" H 9100 4150 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9300 4400 50  0000 C CNN
+F 2 "footprints:SMA_Amphenol_901-9215_EdgeMount" H 9300 4250 50  0001 C CNN
+F 3 " ~" H 9300 4250 50  0001 C CNN
+	1    9300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8D63A4
+P 9300 4450
+F 0 "#PWR?" H 9300 4200 50  0001 C CNN
+F 1 "GND" H 9305 4277 50  0000 C CNN
+F 2 "" H 9300 4450 50  0001 C CNN
+F 3 "" H 9300 4450 50  0001 C CNN
+	1    9300 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4250 9100 4250
+Wire Wire Line
+	8250 4450 8750 4450
+Wire Wire Line
+	8750 4050 8750 4450
+Connection ~ 8750 4450
+Wire Wire Line
+	8750 4450 8750 4550
+Wire Wire Line
+	8300 4550 8750 4550
+Connection ~ 8750 4550
+Wire Wire Line
+	8750 4550 8750 4850
+$EndSCHEMATC

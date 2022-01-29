@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri C:/Users/TEMP.NEWPSI.001/desktop/PCBs/VCO/footprints.pretty)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri "C:/Users/TEMP.NEWPSI.001/desktop/Nova pasta/KiCad/SamacSys_Parts.pretty")(options "")(descr ""))
+  (lib (name fp)(type KiCad)(uri "C:/Users/thiag/OneDrive/Área de Trabalho/PCBs/Coupler/fp.pretty")(options "")(descr ""))
+)
