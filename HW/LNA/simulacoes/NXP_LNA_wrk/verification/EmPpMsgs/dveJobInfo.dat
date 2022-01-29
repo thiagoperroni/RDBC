@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=NXP_LNA_lib:QFN_3x3_12E_Rev0:layout
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

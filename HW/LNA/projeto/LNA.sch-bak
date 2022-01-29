@@ -1,0 +1,650 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Placa Low-Noise Amplifier"
+Date "2019-01-24"
+Rev "00"
+Comp "PSI Poli-USP"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LNA-rescue:Conn_Coaxial-Connector-PA-rescue J3
+U 1 1 5C49BA5D
+P 8300 3800
+F 0 "J3" H 8100 3700 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8300 3950 50  0000 C CNN
+F 2 "footprints:SMA_Amphenol_901-9215_EdgeMount" H 8300 3800 50  0001 C CNN
+F 3 " ~" H 8300 3800 50  0001 C CNN
+	1    8300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR09
+U 1 1 5D8D63A4
+P 8300 4000
+F 0 "#PWR09" H 8300 3750 50  0001 C CNN
+F 1 "GND" H 8305 3827 50  0000 C CNN
+F 2 "" H 8300 4000 50  0001 C CNN
+F 3 "" H 8300 4000 50  0001 C CNN
+	1    8300 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:C-Device C1
+U 1 1 5D9565E6
+P 2550 4850
+F 0 "C1" V 2802 4850 50  0000 C CNN
+F 1 "18pF" V 2711 4850 50  0000 C CNN
+F 2 "Caps:C_0402_1005Metric" H 2588 4700 50  0001 C CNN
+F 3 "~" H 2550 4850 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 2550 4850 50  0001 C CNN "Description"
+F 5 "Murata" H 2550 4850 50  0001 C CNN "Manufacturer_Name"
+F 6 "GJM1555C1H180GB01D " H 2550 4850 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2550 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LNA-rescue:C-Device C7
+U 1 1 5D9574C2
+P 2850 5000
+F 0 "C7" H 2735 4954 50  0000 R CNN
+F 1 "0.6pF" H 2735 5045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2888 4850 50  0001 C CNN
+F 3 "~" H 2850 5000 50  0001 C CNN
+F 4 "0.6 pF Chip Capacitor" H 2850 5000 50  0001 C CNN "Description"
+F 5 "Murata" H 2850 5000 50  0001 C CNN "Manufacturer_Name"
+F 6 "GJM1555C1HR60WB01D " H 2850 5000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2850 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0101
+U 1 1 5D95C2F9
+P 2850 5150
+F 0 "#PWR0101" H 2850 4900 50  0001 C CNN
+F 1 "GND" H 2855 4977 50  0000 C CNN
+F 2 "" H 2850 5150 50  0001 C CNN
+F 3 "" H 2850 5150 50  0001 C CNN
+	1    2850 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:C-Device C5
+U 1 1 5D95DCBF
+P 4350 3750
+F 0 "C5" H 4465 3796 50  0000 L CNN
+F 1 "18pF" H 4465 3705 50  0000 L CNN
+F 2 "Caps:C_0402_1005Metric" H 4388 3600 50  0001 C CNN
+F 3 "~" H 4350 3750 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 4350 3750 50  0001 C CNN "Description"
+F 5 "Murata" H 4350 3750 50  0001 C CNN "Manufacturer_Name"
+F 6 "GJM1555C1H180GB01D " H 4350 3750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:L-Device L1
+U 1 1 5D95E5F5
+P 5350 3650
+F 0 "L1" H 5402 3696 50  0000 L CNN
+F 1 "2.7nH" H 5402 3605 50  0000 L CNN
+F 2 "Inds:L_0805_2012Metric" H 5350 3650 50  0001 C CNN
+F 3 "~" H 5350 3650 50  0001 C CNN
+F 4 "2.7 nH Chip Inductor" H 5350 3650 50  0001 C CNN "Description"
+F 5 "Murata" H 5350 3650 50  0001 C CNN "Manufacturer_Name"
+F 6 "LQW2BAS2N7J00L " H 5350 3650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0102
+U 1 1 5D96063A
+P 4350 4200
+F 0 "#PWR0102" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4355 4027 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2850 4850
+Wire Wire Line
+	2850 4850 2950 4850
+Wire Wire Line
+	5500 3800 5350 3800
+$Comp
+L LNA-rescue:MML20242HT1-SamacSys_Parts IC1
+U 1 1 5D954B21
+P 5500 3700
+F 0 "IC1" H 7144 3646 50  0000 L CNN
+F 1 "MML20242HT1" H 7144 3555 50  0000 L CNN
+F 2 "SamacSys_Parts:QFN50P300X300X90-13N-D" H 6950 4200 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/302/MML20242H-1126927.pdf" H 6950 4100 50  0001 L CNN
+F 4 "RF Amplifier 24dBm GaAs Amp" H 6950 4000 50  0001 L CNN "Description"
+F 5 "0.9" H 6950 3900 50  0001 L CNN "Height"
+F 6 "841-MML20242HT1" H 6950 3800 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6950 3700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Nexperia" H 6950 3600 50  0001 L CNN "Manufacturer_Name"
+F 9 "MML20242HT1" H 6950 3500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3450 5350 3450
+Wire Wire Line
+	5500 3450 5500 3700
+Wire Wire Line
+	5350 3500 5350 3450
+Connection ~ 5350 3450
+Wire Wire Line
+	5350 3450 5500 3450
+$Comp
+L LNA-rescue:C-Device C11
+U 1 1 5D96F8FE
+P 6200 4950
+F 0 "C11" H 6085 4904 50  0000 R CNN
+F 1 "18pF" H 6085 4995 50  0000 R CNN
+F 2 "Caps:C_0402_1005Metric" H 6238 4800 50  0001 C CNN
+F 3 "~" H 6200 4950 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 6200 4950 50  0001 C CNN "Description"
+F 5 "Murata" H 6200 4950 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM1555C1H180JA01D " H 6200 4950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6200 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L LNA-rescue:C-Device C10
+U 1 1 5D97133E
+P 5850 4950
+F 0 "C10" H 5735 4904 50  0000 R CNN
+F 1 "0.1uF" H 5735 4995 50  0000 R CNN
+F 2 "Caps:C_0402_1005Metric" H 5888 4800 50  0001 C CNN
+F 3 "~" H 5850 4950 50  0001 C CNN
+F 4 "0.1uF Chip Capacitors" H 5850 4950 50  0001 C CNN "Description"
+F 5 "Murata" H 5850 4950 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM155R61A104K01" H 5850 4950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5850 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L LNA-rescue:R-Device R2
+U 1 1 5D97199E
+P 5300 4700
+F 0 "R2" H 5370 4746 50  0000 L CNN
+F 1 "1k2" H 5370 4655 50  0000 L CNN
+F 2 "Res:R_0402_1005Metric" V 5230 4700 50  0001 C CNN
+F 3 "~" H 5300 4700 50  0001 C CNN
+F 4 "1200 R Chip Resistors" H 5300 4700 50  0001 C CNN "Description"
+F 5 "Yageo" H 5300 4700 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0402FR-071K2L" H 5300 4700 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0103
+U 1 1 5D97208A
+P 6200 5100
+F 0 "#PWR0103" H 6200 4850 50  0001 C CNN
+F 1 "GND" H 6205 4927 50  0000 C CNN
+F 2 "" H 6200 5100 50  0001 C CNN
+F 3 "" H 6200 5100 50  0001 C CNN
+	1    6200 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0104
+U 1 1 5D9725E6
+P 5850 5100
+F 0 "#PWR0104" H 5850 4850 50  0001 C CNN
+F 1 "GND" H 5855 4927 50  0000 C CNN
+F 2 "" H 5850 5100 50  0001 C CNN
+F 3 "" H 5850 5100 50  0001 C CNN
+	1    5850 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4600 6200 4700
+Wire Wire Line
+	5850 4800 5850 4700
+Wire Wire Line
+	5850 4700 6200 4700
+Connection ~ 6200 4700
+Wire Wire Line
+	6200 4700 6200 4800
+Connection ~ 5850 4700
+$Comp
+L LNA-rescue:R-Device R3
+U 1 1 5D974AAE
+P 6650 4700
+F 0 "R3" V 6443 4700 50  0000 C CNN
+F 1 "1k2" V 6534 4700 50  0000 C CNN
+F 2 "Res:R_0402_1005Metric" V 6580 4700 50  0001 C CNN
+F 3 "~" H 6650 4700 50  0001 C CNN
+F 4 "1200 R Chip Resistors" H 6650 4700 50  0001 C CNN "Description"
+F 5 "Yageo" H 6650 4700 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0402FR-071K2L" H 6650 4700 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6650 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4600 6400 4700
+Wire Wire Line
+	6400 4700 6500 4700
+Wire Wire Line
+	6800 4700 6950 4700
+Wire Wire Line
+	6950 4700 6950 4800
+Wire Wire Line
+	7350 4800 7350 4700
+Wire Wire Line
+	7350 4700 6950 4700
+Connection ~ 6950 4700
+$Comp
+L LNA-rescue:C-Device C2
+U 1 1 5D9778C5
+P 7950 3800
+F 0 "C2" V 8202 3800 50  0000 C CNN
+F 1 "18pF" V 8111 3800 50  0000 C CNN
+F 2 "Caps:C_0402_1005Metric" H 7988 3650 50  0001 C CNN
+F 3 "~" H 7950 3800 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 7950 3800 50  0001 C CNN "Description"
+F 5 "Murata" H 7950 3800 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM1555C1H180JA01D " H 7950 3800 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LNA-rescue:L-Device L2
+U 1 1 5D978F73
+P 7450 3550
+F 0 "L2" H 7502 3596 50  0000 L CNN
+F 1 "6.8nH" H 7502 3505 50  0000 L CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 7450 3550 50  0001 C CNN
+F 3 "~" H 7450 3550 50  0001 C CNN
+F 4 "6.8 nH Chip Inductors" H 7450 3550 50  0001 C CNN "Description"
+F 5 "Coilcraft" H 7450 3550 50  0001 C CNN "Manufacturer_Name"
+F 6 "0402CS-6N8XJLW" H 7450 3550 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:C-Device C3
+U 1 1 5D97973E
+P 7750 3200
+F 0 "C3" H 7865 3246 50  0000 L CNN
+F 1 "18pF" H 7865 3155 50  0000 L CNN
+F 2 "Caps:C_0402_1005Metric" H 7788 3050 50  0001 C CNN
+F 3 "~" H 7750 3200 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 7750 3200 50  0001 C CNN "Description"
+F 5 "Murata" H 7750 3200 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM1555C1H180JA01D " H 7750 3200 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:C-Device C4
+U 1 1 5D979E5D
+P 8150 3200
+F 0 "C4" H 8265 3246 50  0000 L CNN
+F 1 "0.1uF" H 8265 3155 50  0000 L CNN
+F 2 "Caps:C_0402_1005Metric" H 8188 3050 50  0001 C CNN
+F 3 "~" H 8150 3200 50  0001 C CNN
+F 4 "0.1uF Chip Capacitors" H 8150 3200 50  0001 C CNN "Description"
+F 5 "Murata" H 8150 3200 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM155R61A104K01" H 8150 3200 50  0001 C CNN "Manufacturer_Part_Number"
+	1    8150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0107
+U 1 1 5D97A14F
+P 7750 3350
+F 0 "#PWR0107" H 7750 3100 50  0001 C CNN
+F 1 "GND" H 7755 3177 50  0000 C CNN
+F 2 "" H 7750 3350 50  0001 C CNN
+F 3 "" H 7750 3350 50  0001 C CNN
+	1    7750 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0108
+U 1 1 5D97A418
+P 8150 3350
+F 0 "#PWR0108" H 8150 3100 50  0001 C CNN
+F 1 "GND" H 8155 3177 50  0000 C CNN
+F 2 "" H 8150 3350 50  0001 C CNN
+F 3 "" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3800 7450 3800
+Wire Wire Line
+	7450 3700 7450 3800
+Connection ~ 7450 3800
+Wire Wire Line
+	7450 3800 7800 3800
+Wire Wire Line
+	7450 3400 7450 2950
+Wire Wire Line
+	7450 2950 7750 2950
+Wire Wire Line
+	8150 2950 8150 3050
+Wire Wire Line
+	7750 3050 7750 2950
+Connection ~ 7750 2950
+Wire Wire Line
+	7750 2950 8150 2950
+$Comp
+L LNA-rescue:L-Device L4
+U 1 1 5D97BF64
+P 7700 2650
+F 0 "L4" V 7519 2650 50  0000 C CNN
+F 1 "6.8nH" V 7610 2650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 7700 2650 50  0001 C CNN
+F 3 "~" H 7700 2650 50  0001 C CNN
+F 4 "6.8 nH Chip Inductors" H 7700 2650 50  0001 C CNN "Description"
+F 5 "Coilcraft" H 7700 2650 50  0001 C CNN "Manufacturer_Name"
+F 6 "0402CS-6N8XJLW" H 7700 2650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7700 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L LNA-rescue:C-Device C8
+U 1 1 5D97CB4E
+P 7150 3200
+F 0 "C8" H 7265 3246 50  0000 L CNN
+F 1 "18pF" H 7265 3155 50  0000 L CNN
+F 2 "Caps:C_0402_1005Metric" H 7188 3050 50  0001 C CNN
+F 3 "~" H 7150 3200 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 7150 3200 50  0001 C CNN "Description"
+F 5 "Murata" H 7150 3200 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM1555C1H180JA01D " H 7150 3200 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:L-Device L3
+U 1 1 5D97CE6F
+P 6800 2650
+F 0 "L3" V 6619 2650 50  0000 C CNN
+F 1 "1.0nH" V 6710 2650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 6800 2650 50  0001 C CNN
+F 3 "~" H 6800 2650 50  0001 C CNN
+F 4 "1.0 nH Chip Inductor" H 6800 2650 50  0001 C CNN "Description"
+F 5 "Coilcraft" H 6800 2650 50  0001 C CNN "Manufacturer_Name"
+F 6 "0402CS-1N0XJLW" H 6800 2650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6800 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 2650 8150 2650
+Wire Wire Line
+	8150 2650 8150 2950
+Connection ~ 8150 2950
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0109
+U 1 1 5D97EF40
+P 7150 3350
+F 0 "#PWR0109" H 7150 3100 50  0001 C CNN
+F 1 "GND" H 7155 3177 50  0000 C CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0001 C CNN
+	1    7150 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6400 2650
+Wire Wire Line
+	6400 2650 6650 2650
+Wire Wire Line
+	5450 4700 5850 4700
+$Comp
+L LNA-rescue:+5V-power-PA-rescue #PWR0111
+U 1 1 5D98303D
+P 5050 4650
+F 0 "#PWR0111" H 5050 4500 50  0001 C CNN
+F 1 "+5V" H 5065 4823 50  0000 C CNN
+F 2 "" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0001 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4700 5050 4700
+Wire Wire Line
+	5050 4700 5050 4650
+$Comp
+L LNA-rescue:+5V-power-PA-rescue #PWR0113
+U 1 1 5D98572F
+P 7350 4700
+F 0 "#PWR0113" H 7350 4550 50  0001 C CNN
+F 1 "+5V" H 7365 4873 50  0000 C CNN
+F 2 "" H 7350 4700 50  0001 C CNN
+F 3 "" H 7350 4700 50  0001 C CNN
+	1    7350 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 4700
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0114
+U 1 1 5D98648F
+P 5900 3000
+F 0 "#PWR0114" H 5900 2750 50  0001 C CNN
+F 1 "GND" H 5905 2827 50  0000 C CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3000 6100 2900
+Wire Wire Line
+	6100 2900 5900 2900
+Wire Wire Line
+	5900 2900 5900 3000
+$Comp
+L LNA-rescue:Conn_Coaxial-Connector-PA-rescue J2
+U 1 1 5D8B185D
+P 2100 4850
+F 0 "J2" H 1900 4750 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2100 5000 50  0000 C CNN
+F 2 "footprints:SMA_Amphenol_901-9215_EdgeMount" H 2100 4850 50  0001 C CNN
+F 3 " ~" H 2100 4850 50  0001 C CNN
+	1    2100 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power #PWR0115
+U 1 1 5FF11EEA
+P 2100 5150
+F 0 "#PWR0115" H 2100 4900 50  0001 C CNN
+F 1 "GND" H 2105 4977 50  0000 C CNN
+F 2 "" H 2100 5150 50  0001 C CNN
+F 3 "" H 2100 5150 50  0001 C CNN
+	1    2100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5150 2100 5050
+Wire Wire Line
+	4350 4200 4350 3900
+Wire Wire Line
+	4350 3600 4350 3450
+$Comp
+L LNA-rescue:+5V-power-PA-rescue #PWR0110
+U 1 1 5D980360
+P 7150 2400
+F 0 "#PWR0110" H 7150 2250 50  0001 C CNN
+F 1 "+5V" H 7165 2573 50  0000 C CNN
+F 2 "" H 7150 2400 50  0001 C CNN
+F 3 "" H 7150 2400 50  0001 C CNN
+	1    7150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3050 7150 2650
+Wire Wire Line
+	6950 2650 7150 2650
+Connection ~ 7150 2650
+Wire Wire Line
+	7150 2650 7150 2400
+Wire Wire Line
+	7150 2650 7550 2650
+$Comp
+L LNA-rescue:+5V-power-PA-rescue #PWR0112
+U 1 1 5D984321
+P 8150 2400
+F 0 "#PWR0112" H 8150 2250 50  0001 C CNN
+F 1 "+5V" H 8165 2573 50  0000 C CNN
+F 2 "" H 8150 2400 50  0001 C CNN
+F 3 "" H 8150 2400 50  0001 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2400 8150 2650
+Connection ~ 8150 2650
+NoConn ~ 7100 3900
+NoConn ~ 7100 3700
+NoConn ~ 6300 4600
+NoConn ~ 6200 3000
+NoConn ~ 6300 3000
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0106
+U 1 1 5D9763DE
+P 7350 5100
+F 0 "#PWR0106" H 7350 4850 50  0001 C CNN
+F 1 "GND" H 7355 4927 50  0000 C CNN
+F 2 "" H 7350 5100 50  0001 C CNN
+F 3 "" H 7350 5100 50  0001 C CNN
+	1    7350 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR0105
+U 1 1 5D97608F
+P 6950 5100
+F 0 "#PWR0105" H 6950 4850 50  0001 C CNN
+F 1 "GND" H 6955 4927 50  0000 C CNN
+F 2 "" H 6950 5100 50  0001 C CNN
+F 3 "" H 6950 5100 50  0001 C CNN
+	1    6950 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:C-Device C13
+U 1 1 5D975D78
+P 7350 4950
+F 0 "C13" H 7235 4904 50  0000 R CNN
+F 1 "0.1uF" H 7235 4995 50  0000 R CNN
+F 2 "Caps:C_0402_1005Metric" H 7388 4800 50  0001 C CNN
+F 3 "~" H 7350 4950 50  0001 C CNN
+F 4 "0.1uF Chip Capacitors" H 7350 4950 50  0001 C CNN "Description"
+F 5 "Murata" H 7350 4950 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM155R61A104K01" H 7350 4950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7350 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L LNA-rescue:C-Device C12
+U 1 1 5D975742
+P 6950 4950
+F 0 "C12" H 6835 4904 50  0000 R CNN
+F 1 "18pF" H 6835 4995 50  0000 R CNN
+F 2 "Caps:C_0402_1005Metric" H 6988 4800 50  0001 C CNN
+F 3 "~" H 6950 4950 50  0001 C CNN
+F 4 "18 pF Chip Capacitors" H 6950 4950 50  0001 C CNN "Description"
+F 5 "Murata" H 6950 4950 50  0001 C CNN "Manufacturer_Name"
+F 6 "GRM1555C1H180JA01D " H 6950 4950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6950 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 3050 2750 3050
+Wire Wire Line
+	2150 2950 2750 2950
+Wire Wire Line
+	2750 3050 2750 3550
+Wire Wire Line
+	2750 2950 2750 2450
+$Comp
+L LNA-rescue:Conn_01x02-Connector_Generic-PA-rescue J1
+U 1 1 5C4FA506
+P 1950 2950
+F 0 "J1" H 2050 3150 50  0000 C CNN
+F 1 "Conn_01x02" H 1870 3076 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 1950 2950 50  0001 C CNN
+F 3 "~" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:GND-power-PA-rescue #PWR02
+U 1 1 5C4FCFBF
+P 2750 3550
+F 0 "#PWR02" H 2750 3300 50  0001 C CNN
+F 1 "GND" H 2755 3377 50  0000 C CNN
+F 2 "" H 2750 3550 50  0001 C CNN
+F 3 "" H 2750 3550 50  0001 C CNN
+	1    2750 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LNA-rescue:+5V-power-PA-rescue #PWR01
+U 1 1 5C4FCF88
+P 2750 2450
+F 0 "#PWR01" H 2750 2300 50  0001 C CNN
+F 1 "+5V" H 2765 2623 50  0000 C CNN
+F 2 "" H 2750 2450 50  0001 C CNN
+F 3 "" H 2750 2450 50  0001 C CNN
+	1    2750 2450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1500 4100 1500 1950
+Text Notes 1600 2150 0    50   ~ 0
+Power
+Wire Notes Line
+	8850 1950 8850 5600
+Wire Notes Line
+	8850 5600 3600 5600
+Wire Notes Line
+	3600 5600 3600 1950
+Wire Notes Line
+	3600 1950 8850 1950
+Text Notes 3800 2200 0    50   ~ 0
+LNA
+Text Label 2950 4850 0    50   ~ 0
+RF_in_2
+Wire Wire Line
+	2700 4850 2850 4850
+Wire Wire Line
+	2300 4850 2400 4850
+Text Label 4950 3900 0    50   ~ 0
+RF_in_2
+Wire Wire Line
+	4950 3900 5500 3900
+Wire Notes Line
+	1500 4300 1500 5600
+Wire Notes Line
+	1500 5600 3400 5600
+Wire Notes Line
+	3400 5600 3400 4300
+Wire Notes Line
+	3400 4300 1500 4300
+Wire Notes Line
+	1500 4100 3400 4100
+Wire Notes Line
+	3400 4100 3400 1950
+Wire Notes Line
+	1500 1950 3400 1950
+Text Notes 1650 4450 0    50   ~ 0
+RF Input
+$EndSCHEMATC

@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<AdsTranslatorSetupFile Version="1.0">
+    <Import>
+        <ZeroSuppression>Leading</ZeroSuppression>
+        <CoordMode>AbsoluteCMode</CoordMode>
+        <NumIntegerDigits>4</NumIntegerDigits>
+        <NumFractionalDigits>6</NumFractionalDigits>
+        <Unit>mm</Unit>
+        <Layers>
+            <Layer EecadLayer="LNA.drl" AdsLayer="LNA.drl" Transfer="1" />
+        </Layers>
+        <FileFormat>RS274X</FileFormat>
+        <XOffset>0</XOffset>
+        <YOffset>0</YOffset>
+        <Scale>1</Scale>
+        <OpenLineWidth>0.025</OpenLineWidth>
+        <SingleFile>0</SingleFile>
+        <SingleFileFilename></SingleFileFilename>
+        <DrillLayers>
+            <Layer LayerName="LNA.drl" LayerNumber="0" DrillImport="1">
+                <DrillDiameterMap ToolNumber="1" DrawDiameter="40000" ToolDiameter="40000" />
+                <DrillDiameterMap ToolNumber="2" DrawDiameter="140000" ToolDiameter="140000" />
+            </Layer>
+        </DrillLayers>
+        <Flatten>0</Flatten>
+        <AutoMerge>0</AutoMerge>
+        <ImportNegativeLayerAsSlotLayer>0</ImportNegativeLayerAsSlotLayer>
+        <CreateComponentsInFolder>1</CreateComponentsInFolder>
+        <SelectedDesignName></SelectedDesignName>
+        <PathsAsPolygons>0</PathsAsPolygons>
+        <VectorizeText>1</VectorizeText>
+        <LayerStackup>1</LayerStackup>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Polarity />
+        <Nets />
+        <Components />
+    </Import>
+    <Export>
+        <FileFormat>RS274X</FileFormat>
+        <ZeroSuppression>Leading</ZeroSuppression>
+        <CoordMode>AbsoluteCMode</CoordMode>
+        <NumIntegerDigits>2</NumIntegerDigits>
+        <NumFractionalDigits>4</NumFractionalDigits>
+        <XOffset>0</XOffset>
+        <YOffset>0</YOffset>
+        <Scale>1</Scale>
+        <OpenLineWidth>0.025</OpenLineWidth>
+        <SingleFile>0</SingleFile>
+        <Unit>inch</Unit>
+        <Flatten>0</Flatten>
+        <PathsAsPolygons>0</PathsAsPolygons>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Layers />
+    </Export>
+</AdsTranslatorSetupFile>

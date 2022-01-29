@@ -1,0 +1,44 @@
+; Top Design: "lna_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="lna_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: lna_lib
+; Cell Name: LNA-F_Cu
+; View Name: emModel
+define "LNA-F_Cu" ( P1  P2  P3  P4  P5  P6  P7  P8  P13  ref=0 ) 
+;parameters 
+; MomCmpt model has node 0 as implicit reference. Ref node will be ignored and assumed to be grounded!
+em_data_name="lna_lib:LNA-F_Cu:emModel"
+MomCmpt:em_data  P1 P2 P3 P4 P5 P6 P7 P8 P13 \
+    name=em_data_name \
+    paramFile="" \
+    modelFile="C:/Users/thiag_upn9/Desktop/tcc/LNA/lna_wrk/lna_lib/%L%N%A#2d%F_%Cu/em%Model/model.ndx" \
+    ModelReuse=1 \
+    ModelType="MOMRF" \
+    ExtrapolationMode="linear" \
+    EnforcePassivity=-1
+end "LNA-F_Cu"
+
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.3 GHz Stop=4 GHz Step=0.01 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term2  N__15 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term1  N__16 0 Num=1 Z=50 Ohm Noise=yes 
+
+;#@# autodisplay="S_Params_Quad_dB_Smith"
+"LNA-F_Cu":X1  N__14 N__13 N__0 N__5 N__6 N__7 N__16 N__15 0 
+C:C1  N__0 N__5 C=2.65 pF tune{ 1 pF to 27 pF by 0.1 pF } 
+C:C3  N__6 N__7 C=18 pF 
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__14 N__13 0 NumPorts=2 File="C:\Users\thiag_upn9\Desktop\tcc\LNA\MML20242H_2700MHZ_SParms.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 

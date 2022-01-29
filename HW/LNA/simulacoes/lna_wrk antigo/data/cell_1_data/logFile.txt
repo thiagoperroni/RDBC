@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 550.shp Jul 24 2021, MINT version 5
+    (64-bit windows built: Sat Jul 24, 2021 16:09:49 +0000)
+
+
+***** Simulation started at Mon Oct 25 12:04:47 2021
+      Running on host: "LAPTOP-CQV8C167"
+      In Directory: "C:\Users\thiag_upn9\Desktop\LNA\lna_wrk\data"
+      Process ID: 11312
+
+
+SP SP1[1] <lna_lib:cell_1:schematic>   freq=(300 MHz->4 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.32 seconds.
+

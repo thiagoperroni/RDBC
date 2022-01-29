@@ -1,0 +1,44 @@
+; Top Design: "old_lna_lib:cell_2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="old_lna_lib:cell_2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: old_lna_lib
+; Cell Name: cell_1
+; View Name: emModel
+define cell_1 ( P1  P2  P3  P4  P5  P6  P7  P8  P9  ref=0 ) 
+;parameters 
+; MomCmpt model has node 0 as implicit reference. Ref node will be ignored and assumed to be grounded!
+em_data_name="old_lna_lib:cell_1:emModel"
+MomCmpt:em_data  P1 P2 P3 P4 P5 P6 P7 P8 P9 \
+    name=em_data_name \
+    paramFile="" \
+    modelFile="C:/Users/thiag_upn9/Desktop/LNA/old_lna_wrk/old_lna_lib/cell_1/em%Model/model.ndx" \
+    ModelReuse=1 \
+    ModelType="MOMRF" \
+    ExtrapolationMode="linear" \
+    EnforcePassivity=-1
+end cell_1
+
+cell_1:X1  N__8 N__11 N__6 N__10 N__4 N__3 N__2 N__1 N__7 
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__10 N__4 N__0 NumPorts=2 File="C:\Users\thiag_upn9\Desktop\LNA\MML20242H_2700MHZ_SParms.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+C:C1  N__2 N__3 C=18 pF 
+C:C2  N__6 N__11 C=18 pF 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.3 GHz Stop=4.0 GHz Step=0.05 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term1  N__8 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__1 0 Num=2 Z=50 Ohm Noise=yes 
+L:L1  N__0 N__5 L=1 pH tune{ 1 pH to 10000000000 pH by 10000 pH } Noise=yes  
+R:R1  N__5 N__7 R=100 Ohm tune{ 0 Ohm to 10000000 Ohm by 100 Ohm } Noise=yes 

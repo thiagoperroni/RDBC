@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<AdsTranslatorSetupFile Version="1.0">
+    <Import>
+        <Unit>mm</Unit>
+        <Flatten>0</Flatten>
+        <Layers>
+            <Layer EecadLayer="BOARD_OUTLINE" AdsLayer="BOARD_OUTLINE" Transfer="1" />
+            <Layer EecadLayer="ETCH" AdsLayer="ETCH" Transfer="1" />
+            <Layer EecadLayer="LEGEND_SILKSCREEN" AdsLayer="LEGEND_SILKSCREEN" Transfer="1" />
+            <Layer EecadLayer="PLATED_VIA_HOLES" AdsLayer="PLATED_VIA_HOLES" Transfer="1" />
+            <Layer EecadLayer="SOLDER_MASK" AdsLayer="SOLDER_MASK" Transfer="1" />
+            <Layer EecadLayer="TOP_LAYER_1" AdsLayer="TOP_LAYER_1" Transfer="1" />
+        </Layers>
+        <FileFormat>DXF</FileFormat>
+        <AutocadVersion>Autocad 2004</AutocadVersion>
+        <AutoMerge>0</AutoMerge>
+        <ImportNegativeLayerAsSlotLayer>0</ImportNegativeLayerAsSlotLayer>
+        <CreateComponentsInFolder>1</CreateComponentsInFolder>
+        <SelectedDesignName></SelectedDesignName>
+        <PathsAsPolygons>1</PathsAsPolygons>
+        <VectorizeText>0</VectorizeText>
+        <LayerStackup>1</LayerStackup>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Polarity />
+        <Nets />
+        <Components />
+    </Import>
+    <Export>
+        <FileFormat>DXF</FileFormat>
+        <AutocadVersion>Autocad 2004</AutocadVersion>
+        <PathsAsPolygons>1</PathsAsPolygons>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Layers />
+    </Export>
+</AdsTranslatorSetupFile>

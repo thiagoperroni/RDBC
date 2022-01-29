@@ -1,0 +1,17 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor tnom="" mur_imag="" heat_capacity="2.49E+06" imag="" electron_path="" parmtype="1" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="401" tc1="" name="Copper" tc2="" real="5.8e7 Siemens/m"/>
+        <Conductor tnom="" mur_imag="" heat_capacity="" imag="" electron_path="" parmtype="1" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" tc1="" name="Typical_solder" tc2="" real="0.71e7 Siemens/m"/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="0.01" lowfreq="1 KHz" valuefreq="1 GHz" heat_capacity="" electron_path="" er_real="4.6" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" name="FR_4_Core" er_imag=""/>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="0.01" lowfreq="1 KHz" valuefreq="1 GHz" heat_capacity="" electron_path="" er_real="4.6" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" name="FR_4_Prepreg" er_imag=""/>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="" lowfreq="1 KHz" valuefreq="1 GHz" heat_capacity="" electron_path="" er_real="3.3" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" name="SolderMask" er_imag=""/>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="0.01" lowfreq="1 KHz" valuefreq="1 GHz" heat_capacity="" electron_path="" er_real="4.6" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" name="FR_4" er_imag=""/>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="0.00028" lowfreq="1 KHz" valuefreq="9.61 GHz" heat_capacity="1.73E+06" electron_path="" er_real="12.9" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="52" name="GaAs" er_imag=""/>
+        <Dielectric loss_type="1" highfreq="1 THz" mur_imag="" er_loss="0.004" lowfreq="1 KHz" valuefreq="10.0 GHz" heat_capacity="" electron_path="" er_real="3.66" thermal_conductivity_in_z="" mur_real="1" thermal_conductivity="" name="Rogers_RO4350" er_imag=""/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

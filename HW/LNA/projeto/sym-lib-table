@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name PA-rescue)(type Legacy)(uri ${KIPRJMOD}/PA-rescue.lib)(options "")(descr ""))
+  (lib (name LNA-rescue)(type Legacy)(uri ${KIPRJMOD}/LNA-rescue.lib)(options "")(descr ""))
+)

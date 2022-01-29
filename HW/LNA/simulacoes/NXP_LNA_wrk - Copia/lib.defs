@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE NXP_LNA_lib NXP_LNA_lib
+ASSIGN NXP_LNA_lib libMode shared

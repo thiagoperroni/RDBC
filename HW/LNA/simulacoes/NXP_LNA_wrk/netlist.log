@@ -1,0 +1,44 @@
+; Top Design: "NXP_LNA_lib:cell_2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="NXP_LNA_lib:cell_2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: NXP_LNA_lib
+; Cell Name: QFN_3x3_12E_Rev0
+; View Name: emModel
+define QFN_3x3_12E_Rev0 ( P1  P2  P3  P4  P5  P6  P7  P8  P9  ref=0 ) 
+;parameters 
+; MomCmpt model has node 0 as implicit reference. Ref node will be ignored and assumed to be grounded!
+em_data_name="NXP_LNA_lib:QFN_3x3_12E_Rev0:emModel"
+MomCmpt:em_data  P1 P2 P3 P4 P5 P6 P7 P8 P9 \
+    name=em_data_name \
+    paramFile="" \
+    modelFile="C:/Users/thiag_upn9/Desktop/LNA/NXP_LNA_wrk/NXP_LNA_lib/%Q%F%N_3x3_12%E_%Rev0/em%Model/model.ndx" \
+    ModelReuse=1 \
+    ModelType="MOMRF" \
+    ExtrapolationMode="linear" \
+    EnforcePassivity=-1
+end QFN_3x3_12E_Rev0
+
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.3 GHz Stop=4 GHz Step=0.05 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term2  N__1 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
+
+;#@# autodisplay="S_Params_Quad_dB_Smith"
+QFN_3x3_12E_Rev0:X1  N__2 N__11 N__10 N__9 N__3 N__7 N__6 N__1 0 
+C:C1  N__11 N__10 C=18 pF 
+C:C2  N__7 N__6 C=18 pF 
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__9 N__3 0 NumPorts=2 File="C:\Users\thiag_upn9\Desktop\LNA\MML20242H_2700MHZ_SParms.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 

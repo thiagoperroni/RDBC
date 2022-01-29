@@ -1,0 +1,5 @@
+<!DOCTYPE Technology>
+<Lpp_List>
+    <LPP fill="18" visible="1" layer="LNA-F_Cu" purpose="drawing" mode="2" alpha="105" protect="0" rgb="16711680" line="0"/>
+    <LPP fill="18" visible="1" layer="LNA.drl" purpose="drawing" mode="2" alpha="105" protect="0" rgb="16711680" line="0"/>
+</Lpp_List>

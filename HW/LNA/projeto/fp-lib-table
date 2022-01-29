@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name fp)(type KiCad)(uri "C:/Users/thiag/OneDrive/Área de Trabalho/PCBs/Coupler/fp.pretty")(options "")(descr ""))
+  (lib (name projeto)(type KiCad)(uri C:/Users/thiag_upn9/Desktop/PCBsDrive/LNA/projeto)(options "")(descr ""))
+)

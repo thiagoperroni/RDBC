@@ -1,0 +1,9 @@
+<!DOCTYPE Technology>
+<Lpp_List>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="16711680" layer="BOARD_OUTLINE" fill="18" mode="2" visible="1"/>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="65535" layer="ETCH" fill="18" mode="2" visible="1"/>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="16711935" layer="LEGEND_SILKSCREEN" fill="18" mode="2" visible="1"/>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="255" layer="PLATED_VIA_HOLES" fill="18" mode="2" visible="1"/>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="49152" layer="SOLDER_MASK" fill="18" mode="2" visible="1"/>
+    <LPP line="0" protect="0" purpose="drawing" alpha="105" rgb="16776960" layer="TOP_LAYER_1" fill="18" mode="2" visible="1"/>
+</Lpp_List>

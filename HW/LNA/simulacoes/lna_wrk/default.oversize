@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OversizeConfig>
+    <!--Source and target layers with oversize value-->
+    <Layers>
+        <Layer Source="All selected layers" Target="Same as source layer" Oversize="-0.5"/>
+    </Layers>
+    <Options>
+        <OversizeTraces>1</OversizeTraces>
+        <ExcludeInstances>1</ExcludeInstances>
+        <DeleteOriginal>1</DeleteOriginal>
+        <MergeGeometries>0</MergeGeometries>
+        <AcuteAngleCutoff>0</AcuteAngleCutoff>
+        <RoundedOversize>0</RoundedOversize>
+    </Options>
+</OversizeConfig>

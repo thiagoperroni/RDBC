@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 550.shp Jul 24 2021, MINT version 5
+    (64-bit windows built: Sat Jul 24, 2021 16:09:49 +0000)
+
+
+***** Simulation started at Thu Nov  4 16:06:39 2021
+      Running on host: "LAPTOP-CQV8C167"
+      In Directory: "C:\Users\thiag_upn9\Desktop\LNA\NXP_LNA_wrk - Copia\data"
+      Process ID: 8480
+
+
+SP SP1[1] <NXP_LNA_lib:teste:schematic>   freq=(300 MHz->4 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.56 seconds.
+
