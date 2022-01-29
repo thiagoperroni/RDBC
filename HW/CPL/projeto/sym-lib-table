@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name PA-rescue)(type Legacy)(uri ${KIPRJMOD}/PA-rescue.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri "C:/Users/TEMP.NEWPSI.001/Desktop/Nova pasta/KiCad/SamacSys_Parts.lib")(options "")(descr ""))
+  (lib (name RF)(type Legacy)(uri ${KIPRJMOD}/RF.lib)(options "")(descr ""))
+  (lib (name Coupler-rescue)(type Legacy)(uri ${KIPRJMOD}/Coupler-rescue.lib)(options "")(descr ""))
+  (lib (name CPL-rescue)(type Legacy)(uri ${KIPRJMOD}/CPL-rescue.lib)(options "")(descr ""))
+)
